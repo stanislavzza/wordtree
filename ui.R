@@ -14,7 +14,7 @@
 #along with WordTree.  If not, see <http://www.gnu.org/licenses/>.
 
 library(shiny)
-library(binom)
+#library(binom)
 library(dplyr)
 library(tidyr)
 library(igraph)
@@ -38,7 +38,7 @@ shinyUI( #fluidPage(
     
     ########### Loading Data ##################################
     
-    helpText(a("[See User Guide]",href="http://highered.blogspot.com/2014/07/survey-prospector.html")),
+    helpText(a("[See User Guide]",href="https://github.com/stanislavzza/wordtree/wiki")),
     helpText("Send feedback to deubanks.office@gmail.com"),
     htmlOutput("indexFileUploader"),  # upload optional index files
     htmlOutput("dataFileUploader"),   # upload data files
