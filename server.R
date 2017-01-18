@@ -202,7 +202,7 @@ shinyServer(function(input, output, session) {
       
       corp <- VCorpus(VectorSource(corpus))
       
-      dtm <- DocumentTermMatrix(corp,control = list(removePunctuation = TRUE))
+      dtm <- DocumentTermMatrix(corp, control = list(tolower = FALSE)) #,control  = list(removePunctuation = TRUE)
       
       term_count <<- data.frame(word = dtm$dimnames$Terms, n_count = dtm$v)
 
